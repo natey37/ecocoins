@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Switch, Route, useParams} from 'react-router-dom'
+import Home from './pages/Home'
+/** @jsxImportSource @emotion/react */
+import { jsx } from '@emotion/react'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          <Route
+             exact path='/' 
+             component={Home}
+          />
+
+          
+        </Switch>
+      </Router>
+      <h1>THIS IS ECO COINS</h1>
     </div>
   );
 }

@@ -11,7 +11,7 @@ import Coin6 from '../assets/FinalCoin6.gif'
 import Coin7 from '../assets/FinalCoin5.gif'
 import Coin8 from '../assets/FinalCoin4.gif'
 import Coin9 from '../assets/FinalCoin3.gif'
-import Coin10 from '../assets/FinalCoin11.gif'
+import Coin10 from '../assets/silverback.gif'
 
 import {Link} from 'react-router-dom'
 /** @jsxImportSource @emotion/react */

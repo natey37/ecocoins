@@ -1,6 +1,6 @@
 import React from 'react'
 import CoinTemplate from '../components/CoinTemplate'
-import FinalCoin11 from '../assets/FinalCoin11.gif'
+import FinalCoin11 from '../assets/silverback.gif'
 
 
 /** @jsxImportSource @emotion/react */

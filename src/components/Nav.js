@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import logo from '../assets/logo.png'
+import {Link} from 'react-router-dom'
+
 /** @jsxImportSource @emotion/react */
 import { jsx } from '@emotion/react'
 
@@ -39,13 +41,17 @@ export default function Nav(props){
                             
                         }}
                     >   
-                        <img
-                            src={logo}
-                            css={{
-                                height: '100%', 
-                                width: '100%'
-                            }}
-                        ></img>
+                        <Link
+                            to={'/'}
+                        >
+                            <img
+                                src={logo}
+                                css={{
+                                    height: '100%', 
+                                    width: '100%'
+                                }}
+                            ></img>
+                        </Link>
                     </div>
                 </div>
             

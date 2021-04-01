@@ -46,7 +46,7 @@ export default function BottomNav(){
                     }}
                     to='/affiliates'
                 >
-                    Protect and Save
+                    Protect &#38; Save
                 </Link>
             </span>
 

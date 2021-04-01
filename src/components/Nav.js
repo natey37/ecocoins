@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import logo from '../assets/logo.png'
 /** @jsxImportSource @emotion/react */
 import { jsx } from '@emotion/react'
 
@@ -19,24 +20,32 @@ export default function Nav(props){
                         // onClick={() => setSwing(!swing)}
                         // className={swing ? 'swingKraze' : ''}
                         css={{
-                            border: 'solid black',
-                            borderWidth: '0px 10px',
-                            backgroundColor: 'black',
-                            color: 'white',
-                            fontSize: '10vh', 
+                            // border: 'solid yellow',
+                            // borderWidth: '0px 10px',
+                            // backgroundColor: 'yellow',
+                            // color: 'green',
+                            // fontSize: 'min(6vh, 70px)', 
                             margin: 0,
                             position: 'absolute',
                             top: '50%',
                             left: '50%',
                             '-ms-transform': 'translate(-50%, -50%)',
-                            transform: 'translate(-50%, -50%) skewY(-3deg)',
+                            transform: 'translate(-50%, -50%)',
                             '&:hover':{
                                 color: 'magenta',
-                            },
+                            }, 
+                            whiteSpace: 'nowrap',
+                            
                             
                         }}
                     >   
-                        ECO-COINS
+                        <img
+                            src={logo}
+                            css={{
+                                height: '100%', 
+                                width: '100%'
+                            }}
+                        ></img>
                     </div>
                 </div>
             

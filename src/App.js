@@ -12,7 +12,7 @@ import Coin7 from './pages/Coin7'
 import Coin8 from './pages/Coin8'
 import Coin9 from './pages/Coin9'
 import Coin10 from './pages/Coin10'
-
+import About from './pages/About'
 
 /** @jsxImportSource @emotion/react */
 import { jsx } from '@emotion/react'
@@ -70,12 +70,10 @@ function App() {
             exact path ='/SilverBackApe'
             component={Coin10}
           />
-        
-
-
-
-          
-          
+          <Route
+            exact path ='/about'
+            component={About}
+          />
         </Switch>
       </Router>
     </div>

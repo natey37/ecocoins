@@ -13,22 +13,64 @@ import Coin8 from '../assets/FinalCoin4.gif'
 import Coin9 from '../assets/FinalCoin3.gif'
 import Coin10 from '../assets/silverback.gif'
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import {Link} from 'react-router-dom'
 /** @jsxImportSource @emotion/react */
 import { jsx } from '@emotion/react'
 
 export default function Home(){
-
+    const Coin = (link, top, left, src) => {
+        return(
+            <Link
+                    to={link}
+                >
+                    <div
+                        css={{
+                            height: '15%', 
+                            width: '15%',
+                            position: 'absolute',
+                            top: top,
+                            left: left,
+                            '-ms-transform': 'translate(-50%, -50%)',
+                            transform: 'translate(-50%, -50%)',
+                        }}
+                    >
+                        <LazyLoadImage
+                            effect='blur'
+                            src={src}
+                            height='100%'
+                        />
+                    </div>
+            </Link>
+        )
+    }
     return(
         <div
             css={{
+                backgroundColor: '#4E6E58',
                 position: 'relative', 
                 height: '100vh', 
                 width: '100vw'
             }}
         >
         <Nav></Nav>
-        <h1>THIS IS ECO COINS</h1>
+        <h1
+            css={{
+                color: 'white',
+                position: 'absolute',
+                top: '20%',
+                left: '50%',
+                '-ms-transform': 'translate(-50%, -50%)',
+                transform: 'translate(-50%, -50%)',
+                whiteSpace: 'nowrap',
+                fontSize: 'min(3.5vh, 35px)',
+
+            }}
+        >
+            Latest Collection: Gorilla Coins
+        </h1>
         
         <div
             css={{
@@ -49,189 +91,60 @@ export default function Home(){
                     width: '100%'
                 }}
             >
-                <Link
-                    to={'/BigBlueApe'}
-                >
-                <img
-                    css={{
-                        height: '15vh', 
-                        width: '15vh',
-                        position: 'absolute',
-                        top: '15%',
-                        left: '10%',
-                        '-ms-transform': 'translate(-50%, -50%)',
-                        transform: 'translate(-50%, -50%)',
-                    }}
-                    src={Coin1}
-                >
-                </img>
-                </Link>
-                <Link
-                    to={'/FunkyVaporApe'}
-                >
-                <img
-                    css={{
-                        height: '15vh', 
-                        width: '15vh',
-                        position: 'absolute',
-                        top: '15%',
-                        left: '30%',
-                        '-ms-transform': 'translate(-50%, -50%)',
-                        transform: 'translate(-50%, -50%)',
-                    }}
-                    src={Coin2}
-                >
-                </img>
-                </Link>
-                <Link
-                    to={'/GreatGreenApe'}
-                >
-                <img
-                    css={{
-                        height: '15vh', 
-                        width: '15vh',
-                        position: 'absolute',
-                        top: '15%',
-                        left: '50%',
-                        '-ms-transform': 'translate(-50%, -50%)',
-                        transform: 'translate(-50%, -50%)',
-                    }}
-                    src={Coin3}
-                >
-                </img>
-                </Link>
-                <Link
-                    to={'/GrapeApe'}
-                >
-                <img
-                    css={{
-                        height: '15vh', 
-                        width: '15vh',
-                        position: 'absolute',
-                        top: '15%',
-                        left: '70%',
-                        '-ms-transform': 'translate(-50%, -50%)',
-                        transform: 'translate(-50%, -50%)',
-                    }}
-                    src={Coin4}
-                >
-                </img>
-                </Link>
-                <Link
-                    to={'/MidnightApe'}
-                >
-                <img
-                    css={{
-                        height: '15vh', 
-                        width: '15vh',
-                        position: 'absolute',
-                        top: '15%',
-                        left: '90%',
-                        '-ms-transform': 'translate(-50%, -50%)',
-                        transform: 'translate(-50%, -50%)',
-                    }}
-                    src={Coin5}
-                >
-                </img>
-                </Link>
-                <Link
-                    to={'/CrimsonApe'}
-                >
-                <img
-                    css={{
-                        height: '15vh', 
-                        width: '15vh',
-                        position: 'absolute',
-                        top: '50%',
-                        left: '10%',
-                        '-ms-transform': 'translate(-50%, -50%)',
-                        transform: 'translate(-50%, -50%)',
-                    }}
-                    src={Coin6}
-                >
-                </img>
-                </Link>
-                <Link
-                    to={'/CottonCandyApe'}
-                >
-                <img
-                    css={{
-                        height: '15vh', 
-                        width: '15vh',
-                        position: 'absolute',
-                        top: '50%',
-                        left: '30%',
-                        '-ms-transform': 'translate(-50%, -50%)',
-                        transform: 'translate(-50%, -50%)',
-                    }}
-                    src={Coin7}
-                >
-                </img>
-                </Link>
-                <Link
-                    to={'/ProfessorPlumApe'}
-                >
-                <img
-                    css={{
-                        height: '15vh', 
-                        width: '15vh',
-                        position: 'absolute',
-                        top: '50%',
-                        left: '50%',
-                        '-ms-transform': 'translate(-50%, -50%)',
-                        transform: 'translate(-50%, -50%)',
-                    }}
-                    src={Coin8}
-                >
-                </img>
-                </Link>
-                <Link
-                    to={'/CherryBombApe'}
-                >
-                <img
-                    css={{
-                        height: '15vh', 
-                        width: '15vh',
-                        position: 'absolute',
-                        top: '50%',
-                        left: '70%',
-                        '-ms-transform': 'translate(-50%, -50%)',
-                        transform: 'translate(-50%, -50%)',
-                    }}
-                    src={Coin9}
-                >
-                </img>
-                </Link>
-                <Link
-                    to={'/SilverBackApe'}
-                >
-                <img
-                    css={{
-                        height: '15vh', 
-                        width: '15vh',
-                        position: 'absolute',
-                        top: '50%',
-                        left: '90%',
-                        '-ms-transform': 'translate(-50%, -50%)',
-                        transform: 'translate(-50%, -50%)',
-                    }}
-                    src={Coin10}
-                >
-                </img>
-                </Link>
+                {Coin('BigBlueApe', '15%', '10%', Coin1)}
+                {Coin('FunkyVaporApe', '15%', '30%', Coin2)}
+                {Coin('GreatGreenApe', '15%', '50%', Coin3)}
+                {Coin('GrapeApe', '15%', '70%', Coin4)}
+                {Coin('MidnightApe', '15%', '90%', Coin5)}
+                {Coin('CrimsonApe', '32.5%', '10%', Coin6)}
+                {Coin('CottonCandyApe', '32.5%', '30%', Coin7)}
+                {Coin('ProfessorPlumApe', '32.5%', '50%', Coin8)}
+                {Coin('CherryBombApe', '32.5%', '70%', Coin9)}
+                {Coin('SilverBackApe', '32.5%', '90%', Coin10)}
             </div>
             <div
                 css={{
                     width: '100%',
                     position: 'absolute',
-                    top: '90%',
+                    top: '75%',
+                    left: '50%',
+                    '-ms-transform': 'translate(-50%, -50%)',
+                    transform: 'translate(-50%, -50%)',
+                    
+                }}
+            >
+                <div
+                    css={{
+                        fontSize: 'min(4vw, 20px)',
+                        color: 'white',
+                        textAlign: 'left'
+
+                    }}
+                >
+                    Every Gorilla coin will directly adopt one gorilla from the &nbsp;
+                    <a 
+                        css={{
+                            textDecoration: 'none',
+                            color: '#544B3D', 
+                        }}
+                        href='https://gorillafund.org/'>
+                        Dian Fossey
+                    </a> 
+                    &nbsp; Gorilla fund, an organization that helps protect and maintain natural habitats, provide medical care and ensure the well being of great apes. You have the unique opportunity to own a one-of-a-kind Eco-Coin, while helping conserve our natural world.
+                </div>
+            </div>
+        </div>
+        <div
+                css={{
+                    width: '100%',
+                    position: 'absolute',
+                    top: '85%',
                     left: '50%',
                     '-ms-transform': 'translate(-50%, -50%)',
                     transform: 'translate(-50%, -50%)',
                 }}
-            >
-                <h4>Our mission at Eco-Coins is to help endangered animals through the sale of limited edition digital coins. Eco-Coins are meant to spread awareness about the growing problems of species extinction and contribute towards habitat restoration and the protection of these amazing animals.Follow our developing Eco Zoo that will highlight all of the adoptions and conservation efforts that have been achieved through the sale of Eco-Coins</h4>
-            </div>
+        >
+            CHECK BACK SOON FOR NEW UPDATES
         </div>
         {/* <img
             src={coin}

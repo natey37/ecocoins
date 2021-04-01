@@ -8,7 +8,7 @@ export default function BottomNav(){
     return(
         <div
             css={{
-                backgroundColor: 'turquoise',
+                backgroundColor: '#7ADFBB',
                 color: 'black',
                 height: '10vh', 
                 width: '100%',
@@ -26,7 +26,8 @@ export default function BottomNav(){
                 <Link 
                     css={{
                         textDecoration: 'none',
-                        color: 'black'
+                        color: '#544B3D'
+
                     }}
                     to='/about'
                 >
@@ -36,18 +37,20 @@ export default function BottomNav(){
 
             <span
                 css={{
-                    fontWeight: 'bold'
+                    fontWeight: 'bold',
+                    color: '#544B3D'
+
                 }}
             >
-                <Link 
+                <a 
                     css={{
                         textDecoration: 'none',
-                        color: 'black'
+                        color: '#544B3D'
                     }}
-                    to='/affiliates'
+                    href='https://www.worldwildlife.org/'
                 >
                     Protect &#38; Save
-                </Link>
+                </a>
             </span>
 
             <span
@@ -59,7 +62,7 @@ export default function BottomNav(){
                 <Link 
                     css={{
                         textDecoration: 'none',
-                        color: 'black'
+                        color: '#544B3D'
                     }}
                     to='/'
                 >

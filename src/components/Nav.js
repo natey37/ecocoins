@@ -14,7 +14,7 @@ export default function Nav(props){
                     css={{
                         height: '15vh', 
                         position: 'relative',
-                        backgroundColor: 'turquoise',
+                        backgroundColor: '#A6ECE0',
                         
                     }}
                 >   

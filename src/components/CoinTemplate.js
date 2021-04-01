@@ -4,6 +4,10 @@ import BottomNav from '../components/BottomNav'
 import coin from '../assets/SPIFFYCOIN.gif'
 import FinalCoin2 from '../assets/FinalCoin2.gif'
 import {BrowserRouter as Router, Switch, Route, useParams, Link} from 'react-router-dom'
+
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 /** @jsxImportSource @emotion/react */
 import { jsx } from '@emotion/react'
 
@@ -14,24 +18,103 @@ export default function Coin1(props){
             css={{
                 position: 'relative', 
                 height: '100vh', 
-                width: '100vw'
+                width: '100vw',
+                backgroundColor: '#4C8577'
             }}
         >
             <Nav></Nav>
-            
-          
-          <a 
-            css={{
-                textDecoration: 'none',
-                fontSize: 'min(15vw, 60px)',
-                '&:hover':{
-                    color: 'magenta',
-                },
-            }}
-            href={link}>
+            <Link
+                to={'/'}
+            >
+                <div
+                    css={{
+                        backgroundColor: '#7ADFBB',
+                        position: 'absolute',
+                        top: '50%',
+                        left: '15%',
+                        '-ms-transform': 'translate(-50%, -50%)',
+                        transform: 'translate(-50%, -50%)',
+                        height: '7vh', 
+                        width: '7vh',
+                        borderRadius: '50%'
+                    }}
+                >
+                    <div
+                        css={{
+                            position: 'relative', 
+                            height: '100%', 
+                            width: '100%'
+                        }}
+                    >
+                        <div
+                            css={{
+                                position: 'absolute',
+                                top: '50%',
+                                left: '60%',
+                                '-ms-transform': 'translate(-50%, -50%)',
+                                transform: 'translate(-50%, -50%)',
+                                height: '20%', 
+                                width: '25%',
+                                backgroundColor: 'white'
+                            }}
+                        >
+                        </div>
+                        <div
+                            css={{
+                                position: 'absolute',
+                                top: '50%',
+                                left: '35%',
+                                '-ms-transform': 'translate(-50%, -50%)',
+                                transform: 'translate(-50%, -50%)',
+                                width: 0,
+                                height: 0, 
+                                borderTop: '1.5vh solid transparent',
+                                borderBottom: '1.5vh solid transparent',
+                                borderRight: '2vh solid white',
+                            }}
+                        >
+                        </div>
+                    </div>
+                </div>
+            </Link>          
+            <a 
+                css={{
+                    position: 'absolute',
+                    width: '100%',
+                    top: '20%',
+                    left: '50%',
+                    '-ms-transform': 'translate(-50%, -50%)',
+                    transform: 'translate(-50%, -50%)',
+                    textDecoration: 'none',
+                    fontSize: 'min(12vw, 60px)',
+                    '&:hover':{
+                        color: 'magenta',
+                    },
+                    whiteSpace: 'nowrap'
+                }}
+                href={link}
+            >
                 {title}
-          </a>
-            <img
+            </a>
+            
+            <div
+                css={{
+                    height: '50vh', 
+                    width: '50vh',
+                    position: 'absolute',
+                    top: '52.5%',
+                    left: '50%',
+                    '-ms-transform': 'translate(-50%, -50%)',
+                    transform: 'translate(-50%, -50%)',
+                }}
+            >
+                <LazyLoadImage
+                    effect='blur'
+                    src={coin}
+                    height='100%'
+                />
+             </div>
+            {/* <img
                 src={coin}
                 css={{
                     height: '50vh', 
@@ -43,7 +126,7 @@ export default function Coin1(props){
                     transform: 'translate(-50%, -50%)',
                 }}
             >
-            </img>
+            </img> */}
 
             <h3
                 css={{
@@ -52,6 +135,7 @@ export default function Coin1(props){
                     left: '50%',
                     '-ms-transform': 'translate(-50%, -50%)',
                     transform: 'translate(-50%, -50%)',
+                    color: '#544B3D'
                 }}
             >
                 Sponsored by: 
@@ -64,13 +148,14 @@ export default function Coin1(props){
                     left: '50%',
                     '-ms-transform': 'translate(-50%, -50%)',
                     transform: 'translate(-50%, -50%)',
-                    whiteSpace: 'nowrap'
+                    whiteSpace: 'nowrap',
+                    color: 'white'
                 }}
             >Your name here...</h2>
             <div
                 css={{
                     position: 'absolute',
-                    bottom: '-50%',
+                    bottom: '-10%',
                     width: '100%'
                 }}
             >

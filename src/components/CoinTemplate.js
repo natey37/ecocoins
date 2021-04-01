@@ -24,18 +24,18 @@ export default function Coin1(props){
         >
             <Nav></Nav>
             <Link
-                to={'/'}
+                to={'/ApeCoins'}
             >
                 <div
                     css={{
                         backgroundColor: '#7ADFBB',
                         position: 'absolute',
-                        top: '50%',
-                        left: '15%',
+                        top: '20%',
+                        left: '10%',
                         '-ms-transform': 'translate(-50%, -50%)',
                         transform: 'translate(-50%, -50%)',
-                        height: '7vh', 
-                        width: '7vh',
+                        height: '5vh', 
+                        width: '5vh',
                         borderRadius: '50%'
                     }}
                 >
@@ -54,7 +54,7 @@ export default function Coin1(props){
                                 '-ms-transform': 'translate(-50%, -50%)',
                                 transform: 'translate(-50%, -50%)',
                                 height: '20%', 
-                                width: '25%',
+                                width: '30%',
                                 backgroundColor: 'white'
                             }}
                         >
@@ -68,9 +68,9 @@ export default function Coin1(props){
                                 transform: 'translate(-50%, -50%)',
                                 width: 0,
                                 height: 0, 
-                                borderTop: '1.5vh solid transparent',
-                                borderBottom: '1.5vh solid transparent',
-                                borderRight: '2vh solid white',
+                                borderTop: '1vh solid transparent',
+                                borderBottom: '1vh solid transparent',
+                                borderRight: '1.5vh solid white',
                             }}
                         >
                         </div>
@@ -80,13 +80,13 @@ export default function Coin1(props){
             <a 
                 css={{
                     position: 'absolute',
-                    width: '100%',
+                    width: '60%',
                     top: '20%',
                     left: '50%',
                     '-ms-transform': 'translate(-50%, -50%)',
                     transform: 'translate(-50%, -50%)',
                     textDecoration: 'none',
-                    fontSize: 'min(12vw, 60px)',
+                    fontSize: 'min(8vw, 60px)',
                     '&:hover':{
                         color: 'magenta',
                     },

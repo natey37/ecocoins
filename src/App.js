@@ -13,6 +13,7 @@ import Coin8 from './pages/Coin8'
 import Coin9 from './pages/Coin9'
 import Coin10 from './pages/Coin10'
 import About from './pages/About'
+import ApeCoins from './pages/ApeCoins'
 
 /** @jsxImportSource @emotion/react */
 import { jsx } from '@emotion/react'
@@ -74,6 +75,11 @@ function App() {
             exact path ='/about'
             component={About}
           />
+          <Route
+            exact path ='/ApeCoins'
+            component={ApeCoins}
+          />
+
         </Switch>
       </Router>
     </div>

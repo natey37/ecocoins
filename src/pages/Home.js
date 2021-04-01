@@ -12,7 +12,8 @@ import Coin7 from '../assets/FinalCoin5.gif'
 import Coin8 from '../assets/FinalCoin4.gif'
 import Coin9 from '../assets/FinalCoin3.gif'
 import Coin10 from '../assets/silverback.gif'
-
+import GreatApes from '../assets/GreatApes.gif'
+import background from '../assets/background.png'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
@@ -28,8 +29,8 @@ export default function Home(){
                 >
                     <div
                         css={{
-                            height: '15%', 
-                            width: '15%',
+                            height: '80%', 
+                            width: '80%',
                             position: 'absolute',
                             top: top,
                             left: left,
@@ -51,7 +52,7 @@ export default function Home(){
             css={{
                 backgroundColor: '#4E6E58',
                 position: 'relative', 
-                height: '100vh', 
+                height: '120vh', 
                 width: '100vw'
             }}
         >
@@ -65,7 +66,7 @@ export default function Home(){
                 '-ms-transform': 'translate(-50%, -50%)',
                 transform: 'translate(-50%, -50%)',
                 whiteSpace: 'nowrap',
-                fontSize: 'min(3.5vh, 35px)',
+                fontSize: 'min(5vh, 40px)',
 
             }}
         >
@@ -74,7 +75,9 @@ export default function Home(){
         
         <div
             css={{
-                // backgroundColor: 'red',
+                backgroundImage: `url(${background})`,
+                backgroundSize: '100%',
+                backgroundColor: 'red',
                 height: '50vh', 
                 width: '70vw',
                 position: 'absolute',
@@ -91,22 +94,15 @@ export default function Home(){
                     width: '100%'
                 }}
             >
-                {Coin('BigBlueApe', '15%', '10%', Coin1)}
-                {Coin('FunkyVaporApe', '15%', '30%', Coin2)}
-                {Coin('GreatGreenApe', '15%', '50%', Coin3)}
-                {Coin('GrapeApe', '15%', '70%', Coin4)}
-                {Coin('MidnightApe', '15%', '90%', Coin5)}
-                {Coin('CrimsonApe', '32.5%', '10%', Coin6)}
-                {Coin('CottonCandyApe', '32.5%', '30%', Coin7)}
-                {Coin('ProfessorPlumApe', '32.5%', '50%', Coin8)}
-                {Coin('CherryBombApe', '32.5%', '70%', Coin9)}
-                {Coin('SilverBackApe', '32.5%', '90%', Coin10)}
+                
+                {Coin('/ApeCoins', '50%', '50%', GreatApes)}
+
             </div>
             <div
                 css={{
                     width: '100%',
                     position: 'absolute',
-                    top: '75%',
+                    top: '125%',
                     left: '50%',
                     '-ms-transform': 'translate(-50%, -50%)',
                     transform: 'translate(-50%, -50%)',
@@ -121,16 +117,7 @@ export default function Home(){
 
                     }}
                 >
-                    Every Gorilla coin will directly adopt one gorilla from the &nbsp;
-                    <a 
-                        css={{
-                            textDecoration: 'none',
-                            color: '#544B3D', 
-                        }}
-                        href='https://gorillafund.org/'>
-                        Dian Fossey
-                    </a> 
-                    &nbsp; Gorilla fund, an organization that helps protect and maintain natural habitats, provide medical care and ensure the well being of great apes. You have the unique opportunity to own a one-of-a-kind Eco-Coin, while helping conserve our natural world.
+                  Follow our developing progress where we will highlight all of the adoptions and conservation efforts that have been achieved through the sale of eco-coins. We will acknowledge purchasers of eco-coins and highlight what was achieved through each sale. Thank you for your contribution as a steward of equality and opportunity for all creatures of this planet.
                 </div>
             </div>
         </div>
@@ -138,7 +125,7 @@ export default function Home(){
                 css={{
                     width: '100%',
                     position: 'absolute',
-                    top: '85%',
+                    top: '95%',
                     left: '50%',
                     '-ms-transform': 'translate(-50%, -50%)',
                     transform: 'translate(-50%, -50%)',
@@ -162,7 +149,7 @@ export default function Home(){
         <div
             css={{
                 position: 'absolute',
-                bottom: 0,
+                bottom: '-5%',
                 width: '100%'
             }}
         >

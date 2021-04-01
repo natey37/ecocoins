@@ -45,7 +45,7 @@ export default function About(){
                     </li>
                     <br></br>
                     <li>
-                        Follow our developing Eco Zoo that will highlight all of the adoptions and conservation efforts that have been achieved through the sale of Eco-Coins.
+                        Follow our developing Eco Habitat that will highlight all of the adoptions and conservation efforts that have been achieved through the sale of Eco-Coins.
                     </li>
                 </ul>
             </div>

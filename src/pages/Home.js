@@ -59,13 +59,14 @@ export default function Home(){
         <Nav></Nav>
         <h1
             css={{
+                width: '100%',
                 color: 'white',
                 position: 'absolute',
                 top: '20%',
                 left: '50%',
                 '-ms-transform': 'translate(-50%, -50%)',
                 transform: 'translate(-50%, -50%)',
-                whiteSpace: 'nowrap',
+                // whiteSpace: 'nowrap',
                 fontSize: 'min(5vh, 40px)',
 
             }}
@@ -76,10 +77,10 @@ export default function Home(){
         <div
             css={{
                 backgroundImage: `url(${background})`,
-                backgroundSize: '100%',
+                backgroundSize: 'cover',
                 backgroundColor: 'red',
                 height: '50vh', 
-                width: '70vw',
+                width: '90vw',
                 position: 'absolute',
                 top: '50%',
                 left: '50%',

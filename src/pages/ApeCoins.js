@@ -12,6 +12,7 @@ import Coin7 from '../assets/FinalCoin5.gif'
 import Coin8 from '../assets/FinalCoin4.gif'
 import Coin9 from '../assets/FinalCoin3.gif'
 import Coin10 from '../assets/silverback.gif'
+import background from '../assets/background.png'
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -25,13 +26,11 @@ export default function ApeCoins(){
 
         const Coin = (link, top, left, src) => {
             return(
-                <Link
-                        to={link}
-                    >
+             
                         <div
                             css={{
-                                height: '15%', 
-                                width: '15%',
+                                height: '40%', 
+                                width: '20%',
                                 position: 'absolute',
                                 top: top,
                                 left: left,
@@ -39,13 +38,17 @@ export default function ApeCoins(){
                                 transform: 'translate(-50%, -50%)',
                             }}
                         >
+                            <Link
+                              to={link}
+                            >
                             <LazyLoadImage
                                 effect='blur'
                                 src={src}
                                 height='100%'
                             />
+                            </Link>
                         </div>
-                </Link>
+               
             )
         }
 
@@ -59,11 +62,65 @@ export default function ApeCoins(){
                 }}
             >
                 <Nav></Nav>
+                <Link
+                    to={'/'}
+                >
+                    <div
+                        css={{
+                            backgroundColor: '#7ADFBB',
+                            position: 'absolute',
+                            top: '20%',
+                            left: '10%',
+                            '-ms-transform': 'translate(-50%, -50%)',
+                            transform: 'translate(-50%, -50%)',
+                            height: '5vh', 
+                            width: '5vh',
+                            borderRadius: '50%'
+                        }}
+                    >
+                        <div
+                            css={{
+                                position: 'relative', 
+                                height: '100%', 
+                                width: '100%'
+                            }}
+                        >
+                            <div
+                                css={{
+                                    position: 'absolute',
+                                    top: '50%',
+                                    left: '60%',
+                                    '-ms-transform': 'translate(-50%, -50%)',
+                                    transform: 'translate(-50%, -50%)',
+                                    height: '20%', 
+                                    width: '30%',
+                                    backgroundColor: 'white'
+                                }}
+                            >
+                            </div>
+                            <div
+                                css={{
+                                    position: 'absolute',
+                                    top: '50%',
+                                    left: '35%',
+                                    '-ms-transform': 'translate(-50%, -50%)',
+                                    transform: 'translate(-50%, -50%)',
+                                    width: 0,
+                                    height: 0, 
+                                    borderTop: '1vh solid transparent',
+                                    borderBottom: '1vh solid transparent',
+                                    borderRight: '1.5vh solid white',
+                                }}
+                            >
+                            </div>
+                        </div>
+                    </div>
+                </Link>     
                 <h1
                     css={{
                         color: 'white',
                         position: 'absolute',
-                        top: '20%',
+                        top: '17.5%',
                         left: '50%',
                         '-ms-transform': 'translate(-50%, -50%)',
                         transform: 'translate(-50%, -50%)',
@@ -72,16 +129,18 @@ export default function ApeCoins(){
         
                     }}
                 >
-                    Latest Collection: Gorilla Coins
+                    Gorilla Coins
                 </h1>
             
                 <div
                     css={{
+                        backgroundImage: `url(${background})`,
+                        backgroundSize: '100%',
                         // backgroundColor: 'red',
-                        height: '50vh', 
-                        width: '70vw',
+                        height: '25vh', 
+                        width: '100vw',
                         position: 'absolute',
-                        top: '50%',
+                        top: '40%',
                         left: '50%',
                         '-ms-transform': 'translate(-50%, -50%)',
                         transform: 'translate(-50%, -50%)',
@@ -94,22 +153,22 @@ export default function ApeCoins(){
                             width: '100%'
                         }}
                     >
-                        {Coin('BigBlueApe', '15%', '10%', Coin1)}
-                        {Coin('FunkyVaporApe', '15%', '30%', Coin2)}
-                        {Coin('GreatGreenApe', '15%', '50%', Coin3)}
-                        {Coin('GrapeApe', '15%', '70%', Coin4)}
-                        {Coin('MidnightApe', '15%', '90%', Coin5)}
-                        {Coin('CrimsonApe', '32.5%', '10%', Coin6)}
-                        {Coin('CottonCandyApe', '32.5%', '30%', Coin7)}
-                        {Coin('ProfessorPlumApe', '32.5%', '50%', Coin8)}
-                        {Coin('CherryBombApe', '32.5%', '70%', Coin9)}
-                        {Coin('SilverBackApe', '32.5%', '90%', Coin10)}
+                        {Coin('BigBlueApe', '25%', '10%', Coin1)}
+                        {Coin('FunkyVaporApe', '25%', '30%', Coin2)}
+                        {Coin('GreatGreenApe', '25%', '50%', Coin3)}
+                        {Coin('GrapeApe', '25%', '70%', Coin4)}
+                        {Coin('MidnightApe', '25%', '90%', Coin5)}
+                        {Coin('CrimsonApe', '75%', '10%', Coin6)}
+                        {Coin('CottonCandyApe', '75%', '30%', Coin7)}
+                        {Coin('ProfessorPlumApe', '75%', '50%', Coin8)}
+                        {Coin('CherryBombApe', '75%', '70%', Coin9)}
+                        {Coin('SilverBackApe', '75%', '90%', Coin10)}
                     </div>
                     <div
                         css={{
-                            width: '100%',
+                            width: '80%',
                             position: 'absolute',
-                            top: '75%',
+                            top: '150%',
                             left: '50%',
                             '-ms-transform': 'translate(-50%, -50%)',
                             transform: 'translate(-50%, -50%)',

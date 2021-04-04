@@ -13,6 +13,8 @@ import Coin8 from '../assets/FinalCoin4.gif'
 import Coin9 from '../assets/FinalCoin3.gif'
 import Coin10 from '../assets/silverback.gif'
 import GreatApes from '../assets/GreatApes.gif'
+import Elephants from '../assets/elephantgroup2.gif'
+
 import background from '../assets/background.png'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -29,8 +31,8 @@ export default function Home(){
                 >
                     <div
                         css={{
-                            height: '80%', 
-                            width: '80%',
+                            height: '30vw', 
+                            width: '30vw',
                             position: 'absolute',
                             top: top,
                             left: left,
@@ -62,17 +64,39 @@ export default function Home(){
                 width: '100%',
                 color: 'white',
                 position: 'absolute',
-                top: '20%',
+                top: '17.5%',
                 left: '50%',
                 '-ms-transform': 'translate(-50%, -50%)',
                 transform: 'translate(-50%, -50%)',
                 // whiteSpace: 'nowrap',
-                fontSize: 'min(5vh, 40px)',
+                fontSize: 'min(6vh, 50px)',
 
             }}
         >
-            Latest Collection: Gorilla Coins
+            Latest Collections:
         </h1>
+        {/* <h1
+            css={{
+                width: '100%',
+                color: 'white',
+                position: 'absolute',
+                top: '22.5%',
+                left: '50%',
+                '-ms-transform': 'translate(-50%, -50%)',
+                transform: 'translate(-50%, -50%)',
+                // whiteSpace: 'nowrap',
+                fontSize: 'min(6vh, 40px)',
+
+            }}
+        >
+            <span
+              css={{
+                  color: 'green'
+              }}
+            >
+                Gorilla Coins   
+            </span> and Elephant Coins
+        </h1> */}
         
         <div
             css={{
@@ -94,10 +118,46 @@ export default function Home(){
                     height: '100%', 
                     width: '100%'
                 }}
-            >
-                
-                {Coin('/ApeCoins', '50%', '50%', GreatApes)}
-
+            >   
+                <Link
+                    to={'/ApeCoins'}
+                >
+                    <div
+                        css={{
+                            position: 'absolute',
+                            top: '7.5%',
+                            left: '25%',
+                            '-ms-transform': 'translate(-50%, -50%)',
+                            transform: 'translate(-50%, -50%)',
+                            fontSize: 'min(3vh, 32px)',
+                            color: 'green',
+                            fontWeight: 'bold'
+                        }}
+                    >
+                        Gorilla Coins
+                    </div>
+                </Link>
+                <Link
+                    to={'/ElephantCoins'}
+                >
+                    <div
+                        css={{
+                            position: 'absolute',
+                            top: '7.5%',
+                            left: '75%',
+                            '-ms-transform': 'translate(-50%, -50%)',
+                            transform: 'translate(-50%, -50%)',
+                            fontSize: 'min(3vh, 32px)',
+                            color: 'blue',
+                            fontWeight: 'bold',
+                            whiteSpace: 'nowrap'
+                        }}
+                    >
+                        Elephant Coins
+                    </div>
+                </Link>
+                {Coin('/ApeCoins', '55%', '25%', GreatApes)}
+                {Coin('/ElephantCoins', '55%', '75%', Elephants)}
             </div>
             <div
                 css={{

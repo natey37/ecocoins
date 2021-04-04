@@ -14,6 +14,7 @@ export default function Coin8(){
                 coin={FinalCoin4}
                 title={'Professor Plum Ape'}
                 link={'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/83888770993738068470817144150095546138368866452306998561586717437427428884481'}
+                backLink={'/ApeCoins'}
             />
        </div>
     )

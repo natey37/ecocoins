@@ -12,7 +12,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import { jsx } from '@emotion/react'
 
 export default function Coin1(props){
-    const {coin, title, link} = props
+    const {coin, title, link, backLink} = props
     return(
         <div
             css={{
@@ -24,7 +24,7 @@ export default function Coin1(props){
         >
             <Nav></Nav>
             <Link
-                to={'/ApeCoins'}
+                to={backLink}
             >
                 <div
                     css={{
@@ -86,7 +86,7 @@ export default function Coin1(props){
                     '-ms-transform': 'translate(-50%, -50%)',
                     transform: 'translate(-50%, -50%)',
                     textDecoration: 'none',
-                    fontSize: 'min(8vw, 60px)',
+                    fontSize: 'min(8vw, 50px)',
                     '&:hover':{
                         color: 'magenta',
                     },

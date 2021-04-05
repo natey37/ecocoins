@@ -1,19 +1,6 @@
 import React from 'react'
 import Nav from '../components/Nav.js'
 import BottomNav from '../components/BottomNav'
-import ElephantCoin1 from '../assets/elephantfinal1.gif'
-import ElephantCoin2 from '../assets/elephantfinal2.gif'
-import ElephantCoin3 from '../assets/elephantfinal3.gif'
-import ElephantCoin4 from '../assets/elephantfinal4.gif'
-import ElephantCoin5 from '../assets/elephantfinal5.gif'
-import ElephantCoin6 from '../assets/elephantfinal6.gif'
-import ElephantCoin7 from '../assets/elephantfinal7.gif'
-import ElephantCoin8 from '../assets/elephantfinal8.gif'
-import ElephantCoin9 from '../assets/elephantfinal9.gif'
-import ElephantCoin10 from '../assets/elephantfinal10.gif'
-import ElephantCoin11 from '../assets/elephantfinal11.gif'
-
-// import Coin10 from '../assets/silverback.gif'
 import background from '../assets/background.png'
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -155,18 +142,18 @@ export default function ElephantCoins(){
                             width: '100%'
                         }}
                     >
-                        {Coin('GreatGreenGrasslandsElephant', '25%', '10%', ElephantCoin1)}
-                        {Coin('SherbertSunsetElephant', '25%', '26%', ElephantCoin2)}
-                        {Coin('MagesticMagentaElephant', '25%', '42%', ElephantCoin3)}
-                        {Coin('PinkPacifistElephant', '25%', '58%', ElephantCoin4)}
-                        {Coin('GrayingGrayElephant', '25%', '74%', ElephantCoin5)}
-                        {Coin('TinkeringTwilightElephant', '25%', '90%', ElephantCoin10)}
-
-                        {Coin('ForestFunkElephant', '75%', '10%', ElephantCoin6)}
-                        {Coin('PurplePassionElephant', '75%', '30%', ElephantCoin7)}
-                        {Coin('NeonNerdElephant', '75%', '50%', ElephantCoin8)}
-                        {Coin('SunnySavannaElephant', '75%', '70%', ElephantCoin9)}
-                        {Coin('OGOrangeElephant', '75%', '90%', ElephantCoin11)}
+                        {Coin('GreatGreenGrasslandsElephant', '25%', '10%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal1.gif')}
+                        {Coin('SherbertSunsetElephant', '25%', '26%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal2.gif')}
+                        {Coin('MagesticMagentaElephant', '25%', '42%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal3.gif')}
+                        {Coin('PinkPacifistElephant', '25%', '58%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal4.gif')}
+                        {Coin('GrayingGrayElephant', '25%', '74%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal5.gif')}
+                        {Coin('SunnySavannaElephant', '25%', '90%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal10.gif')}
+                        
+                        {Coin('TinkeringTwilightElephant', '75%', '70%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal6.gif')}
+                        {Coin('ForestFunkElephant', '75%', '10%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal7.gif')}
+                        {Coin('PurplePassionElephant', '75%', '30%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal8.gif')}
+                        {Coin('NeonNerdElephant', '75%', '50%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal9.gif')}
+                        {Coin('OGOrangeElephant', '75%', '90%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal11.gif')}
 
                     </div>
                     {/* <div

@@ -1,19 +1,6 @@
 import React from 'react'
 import Nav from '../components/Nav.js'
 import BottomNav from '../components/BottomNav'
-import coin from '../assets/SPIFFYCOIN.gif'
-import Coin1 from '../assets/FinalCoin2.gif'
-import Coin2 from '../assets/FinalCoin10.gif'
-import Coin3 from '../assets/FinalCoin9.gif'
-import Coin4 from '../assets/FinalCoin8.gif'
-import Coin5 from '../assets/FinalCoin7.gif'
-import Coin6 from '../assets/FinalCoin6.gif'
-import Coin7 from '../assets/FinalCoin5.gif'
-import Coin8 from '../assets/FinalCoin4.gif'
-import Coin9 from '../assets/FinalCoin3.gif'
-import Coin10 from '../assets/silverback.gif'
-import GreatApes from '../assets/GreatApes.gif'
-import Elephants from '../assets/elephantgroup2.gif'
 
 import background from '../assets/background.png'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -31,8 +18,8 @@ export default function Home(){
                 >
                     <div
                         css={{
-                            height: '30vw', 
-                            width: '30vw',
+                            height: '20vw', 
+                            width: '20vw',
                             position: 'absolute',
                             top: top,
                             left: left,
@@ -156,8 +143,8 @@ export default function Home(){
                         Elephant Coins
                     </div>
                 </Link>
-                {Coin('/ApeCoins', '55%', '25%', GreatApes)}
-                {Coin('/ElephantCoins', '55%', '75%', Elephants)}
+                {Coin('/ApeCoins', '55%', '25%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GorillaCoins/CompressedFinalGreatApes.gif')}
+                {Coin('/ElephantCoins', '55%', '75%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantsFinal1.gif')}
             </div>
             <div
                 css={{

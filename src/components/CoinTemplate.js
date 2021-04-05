@@ -1,8 +1,6 @@
 import React from 'react'
 import Nav from '../components/Nav.js'
 import BottomNav from '../components/BottomNav'
-import coin from '../assets/SPIFFYCOIN.gif'
-import FinalCoin2 from '../assets/FinalCoin2.gif'
 import {BrowserRouter as Router, Switch, Route, useParams, Link} from 'react-router-dom'
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';

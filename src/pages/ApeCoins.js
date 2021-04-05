@@ -1,17 +1,6 @@
 import React from 'react'
 import Nav from '../components/Nav.js'
 import BottomNav from '../components/BottomNav'
-import coin from '../assets/SPIFFYCOIN.gif'
-import Coin1 from '../assets/FinalCoin2.gif'
-import Coin2 from '../assets/FinalCoin10.gif'
-import Coin3 from '../assets/FinalCoin9.gif'
-import Coin4 from '../assets/FinalCoin8.gif'
-import Coin5 from '../assets/FinalCoin7.gif'
-import Coin6 from '../assets/FinalCoin6.gif'
-import Coin7 from '../assets/FinalCoin5.gif'
-import Coin8 from '../assets/FinalCoin4.gif'
-import Coin9 from '../assets/FinalCoin3.gif'
-import Coin10 from '../assets/silverback.gif'
 import background from '../assets/background.png'
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -153,16 +142,16 @@ export default function ApeCoins(){
                             width: '100%'
                         }}
                     >
-                        {Coin('BigBlueApe', '25%', '10%', Coin1)}
-                        {Coin('FunkyVaporApe', '25%', '30%', Coin2)}
-                        {Coin('GreatGreenApe', '25%', '50%', Coin3)}
-                        {Coin('GrapeApe', '25%', '70%', Coin4)}
-                        {Coin('MidnightApe', '25%', '90%', Coin5)}
-                        {Coin('CrimsonApe', '75%', '10%', Coin6)}
-                        {Coin('CottonCandyApe', '75%', '30%', Coin7)}
-                        {Coin('ProfessorPlumApe', '75%', '50%', Coin8)}
-                        {Coin('CherryBombApe', '75%', '70%', Coin9)}
-                        {Coin('SilverBackApe', '75%', '90%', Coin10)}
+                        {Coin('BigBlueApe', '25%', '10%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GorillaCoins/CompressedFinalCoin1.gif')}
+                        {Coin('FunkyVaporApe', '25%', '30%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GorillaCoins/CompressedFinalCoin2.gif')}
+                        {Coin('GreatGreenApe', '25%', '50%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GorillaCoins/CompressedFinalCoin3.gif')}
+                        {Coin('GrapeApe', '25%', '70%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GorillaCoins/CompressedFinalCoin4.gif')}
+                        {Coin('MidnightApe', '25%', '90%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GorillaCoins/CompressedFinalCoin5.gif')}
+                        {Coin('CrimsonApe', '75%', '10%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GorillaCoins/CompressedFinalCoin6.gif')}
+                        {Coin('CottonCandyApe', '75%', '30%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GorillaCoins/CompressedFInalCoin7.gif')}
+                        {Coin('ProfessorPlumApe', '75%', '50%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GorillaCoins/CompressedFinalCoin8.gif')}
+                        {Coin('CherryBombApe', '75%', '70%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GorillaCoins/CompressedFinalCoin9.gif')}
+                        {Coin('SilverBackApe', '75%', '90%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GorillaCoins/CompressedFinalCoin10.gif')}
                     </div>
                     <div
                         css={{

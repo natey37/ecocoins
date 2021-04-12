@@ -11,7 +11,7 @@ import {Link} from 'react-router-dom'
 import { jsx } from '@emotion/react'
 
 
-export default function ElephantCoins(){
+export default function RhinoCoins(){
 
         const Coin = (link, top, left, src) => {
             return(
@@ -118,7 +118,7 @@ export default function ElephantCoins(){
         
                     }}
                 >
-                    Elephant Coins
+                    Rhino Coins
                 </h1>
             
                 <div
@@ -142,18 +142,21 @@ export default function ElephantCoins(){
                             width: '100%'
                         }}
                     >
-                        {Coin('GreatGreenGrasslandsElephant', '25%', '10%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal1.gif')}
-                        {Coin('SherbertSunsetElephant', '25%', '26%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal2.gif')}
-                        {Coin('MagesticMagentaElephant', '25%', '42%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal3.gif')}
-                        {Coin('PinkPacifistElephant', '25%', '58%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal4.gif')}
-                        {Coin('GrayingGrayElephant', '25%', '74%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal5.gif')}
-                        {Coin('SunnySavannaElephant', '25%', '90%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal10.gif')}
+                        {Coin('NeonGothicRhino', '25%', '10%', 'https://eco-coins.s3-us-west-2.amazonaws.com/RhinoCoins/rhinofinal1.gif')}
+                        {Coin('YellowThunderRhino', '25%', '26%', 'https://eco-coins.s3-us-west-2.amazonaws.com/RhinoCoins/rhinofinal2.gif')}
+                        {Coin('GrassyNGassyGreenRhino', '25%', '42%', 'https://eco-coins.s3-us-west-2.amazonaws.com/RhinoCoins/rhinofinal3.gif')}
+                        {Coin('StompingStormRhino', '25%', '58%', 'https://eco-coins.s3-us-west-2.amazonaws.com/RhinoCoins/rhinofinal4.gif')}
+                        {Coin('RagingRedRhino', '25%', '74%', 'https://eco-coins.s3-us-west-2.amazonaws.com/RhinoCoins/rhinofinal5.gif')}
+                        {Coin('OrangeCrushRhino', '25%', '90%', 'https://eco-coins.s3-us-west-2.amazonaws.com/RhinoCoins/rhinofinal6.gif')}
                         
-                        {Coin('TinkeringTwilightElephant', '75%', '70%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal6.gif')}
-                        {Coin('ForestFunkElephant', '75%', '10%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal7.gif')}
-                        {Coin('PurplePassionElephant', '75%', '30%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal8.gif')}
-                        {Coin('NeonNerdElephant', '75%', '50%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal9.gif')}
-                        {Coin('OGOrangeElephant', '75%', '90%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal11.gif')}
+                       
+                        {Coin('GreatGoldenRhino', '75%', '10%', 'https://eco-coins.s3-us-west-2.amazonaws.com/RhinoCoins/rhinofinal7.gif')}
+                        {Coin('ParadisePunchRhino', '75%', '26%', 'https://eco-coins.s3-us-west-2.amazonaws.com/RhinoCoins/rhinofinal8.gif')}
+                        {Coin('SimmeringSwimmingRhino', '75%', '42%', 'https://eco-coins.s3-us-west-2.amazonaws.com/RhinoCoins/rhinofinal9.gif')}
+                        {Coin('BoldBlueRhino', '75%', '58%', 'https://eco-coins.s3-us-west-2.amazonaws.com/RhinoCoins/rhinofinal10.gif')}
+                        {Coin('PurplePassionRhino', '75%', '74%', 'https://eco-coins.s3-us-west-2.amazonaws.com/RhinoCoins/rhinofinal11.gif')}
+                        {Coin('MarvelousMagesticMagentaRhino', '75%', '90%', 'https://eco-coins.s3-us-west-2.amazonaws.com/RhinoCoins/rhinofinal12.gif')}
+
 
                     </div>
                     <div
@@ -175,13 +178,13 @@ export default function ElephantCoins(){
         
                             }}
                         >
-                            Every Elephant coin will directly adopt one elephant from the &nbsp;
+                            Every Rhino coin will directly adopt one rhino from the &nbsp;
                             <a 
                                 css={{
                                     textDecoration: 'none',
                                     color: '#544B3D', 
                                 }}
-                                href='https://www.sheldrickwildlifetrust.org/orphans'>
+                                href='https://www.sheldrickwildlifetrust.org/orphans?q%5Bspecies.slug%5D=rhino&q%5Bage%5D=&q%5Bgender%5D=&q%5Brescued.environ%5D=&q%5Blocation.slug%5D=&q%5Bname%5D=&filter_grid=2&q%5Balive%5D=true#orphan_search'>
                                 Sheldrik Wildlife Trust
                             </a> 
                             &nbsp;, an organization that exists to protect Africa’s wildlife and to preserve habitats for the future of all wild species. You have the unique opportunity to own a one-of-a-kind Eco-Coin, while helping conserve our natural world.

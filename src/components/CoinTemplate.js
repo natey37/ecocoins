@@ -84,11 +84,11 @@ export default function Coin1(props){
                     '-ms-transform': 'translate(-50%, -50%)',
                     transform: 'translate(-50%, -50%)',
                     textDecoration: 'none',
-                    fontSize: 'min(8vw, 50px)',
+                    fontSize: 'min(5vh, 30px)',
                     '&:hover':{
                         color: 'magenta',
                     },
-                    whiteSpace: 'nowrap'
+                    // whiteSpace: 'nowrap'
                 }}
                 href={link}
             >

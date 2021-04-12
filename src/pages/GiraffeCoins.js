@@ -11,7 +11,7 @@ import {Link} from 'react-router-dom'
 import { jsx } from '@emotion/react'
 
 
-export default function ElephantCoins(){
+export default function GiraffeCoins(){
 
         const Coin = (link, top, left, src) => {
             return(
@@ -118,7 +118,7 @@ export default function ElephantCoins(){
         
                     }}
                 >
-                    Elephant Coins
+                    Giraffe Coins
                 </h1>
             
                 <div
@@ -142,18 +142,21 @@ export default function ElephantCoins(){
                             width: '100%'
                         }}
                     >
-                        {Coin('GreatGreenGrasslandsElephant', '25%', '10%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal1.gif')}
-                        {Coin('SherbertSunsetElephant', '25%', '26%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal2.gif')}
-                        {Coin('MagesticMagentaElephant', '25%', '42%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal3.gif')}
-                        {Coin('PinkPacifistElephant', '25%', '58%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal4.gif')}
-                        {Coin('GrayingGrayElephant', '25%', '74%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal5.gif')}
-                        {Coin('SunnySavannaElephant', '25%', '90%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal10.gif')}
+                        {Coin('GreenGatsbyGiraffe', '25%', '10%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal1.gif')}
+                        {Coin('EternalSummerGiraffe', '25%', '26%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal2.gif')}
+                        {Coin('CottonCandyDreamsGiraffe', '25%', '42%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal3.gif')}
+                        {Coin('JungleJamGiraffe', '25%', '58%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal4.gif')}
+                        {Coin('NeonNitroGiraffe', '25%', '74%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal5.gif')}
+                        {Coin('JungleBoogeyGiraffe', '25%', '90%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal6.gif')}
                         
-                        {Coin('TinkeringTwilightElephant', '75%', '70%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal6.gif')}
-                        {Coin('ForestFunkElephant', '75%', '10%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal7.gif')}
-                        {Coin('PurplePassionElephant', '75%', '30%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal8.gif')}
-                        {Coin('NeonNerdElephant', '75%', '50%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal9.gif')}
-                        {Coin('OGOrangeElephant', '75%', '90%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantFinal11.gif')}
+                       
+                        {Coin('EasyBreezyGiraffe', '75%', '10%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal7.gif')}
+                        {Coin('MidnightMadnessGiraffe', '75%', '26%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal8.gif')}
+                        {Coin('WhisperingWhiteGiraffe', '75%', '42%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal9.gif')}
+                        {Coin('SummerBluesGiraffe', '75%', '58%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal10.gif')}
+                        {Coin('RazzyRaspberryGiraffe', '75%', '74%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal11.gif')}
+                        {Coin('HootinHawlloweenGiraffe', '75%', '90%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal12.gif')}
+
 
                     </div>
                     <div
@@ -175,16 +178,16 @@ export default function ElephantCoins(){
         
                             }}
                         >
-                            Every Elephant coin will directly adopt one elephant from the &nbsp;
+                            Every Giraffe coin will directly adopt one giraffe from the &nbsp;
                             <a 
                                 css={{
                                     textDecoration: 'none',
                                     color: '#544B3D', 
                                 }}
-                                href='https://www.sheldrickwildlifetrust.org/orphans'>
-                                Sheldrik Wildlife Trust
+                                href='https://adopt.giraffeconservation.org/'>
+                                Giraffe Conservation Foundation
                             </a> 
-                            &nbsp;, an organization that exists to protect Africa’s wildlife and to preserve habitats for the future of all wild species. You have the unique opportunity to own a one-of-a-kind Eco-Coin, while helping conserve our natural world.
+                            &nbsp;, GCF is conducting a long-term giraffe conservation programme in north-western Namibia.. You have the unique opportunity to own a one-of-a-kind Eco-Coin, while helping conserve our natural world.
                         </div>
                     </div>
                 </div>

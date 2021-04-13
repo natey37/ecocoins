@@ -10,7 +10,7 @@ export default function BottomNav(){
             css={{
                 backgroundColor: '#7ADFBB',
                 color: 'black',
-                height: '10vh', 
+                height: '12.5vh', 
                 width: '100%',
                 display: 'flex',
                 alignItems: 'center',

@@ -2,87 +2,59 @@ import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router, Switch, Route, useParams} from 'react-router-dom'
 import Home from './pages/Home'
-import Coin1 from './pages/Coin1'
-import Coin2 from './pages/Coin2'
-import Coin3 from './pages/Coin3'
-import Coin4 from './pages/Coin4'
-import Coin5 from './pages/Coin5'
-import Coin6 from './pages/Coin6'
-import Coin7 from './pages/Coin7'
-import Coin8 from './pages/Coin8'
-import Coin9 from './pages/Coin9'
-import Coin10 from './pages/Coin10'
+import Coin1 from './pages/Gorillas/Coin1'
+import Coin2 from './pages/Gorillas/Coin2'
+import Coin3 from './pages/Gorillas/Coin3'
+import Coin4 from './pages/Gorillas/Coin4'
+import Coin5 from './pages/Gorillas/Coin5'
+import Coin6 from './pages/Gorillas/Coin6'
+import Coin7 from './pages/Gorillas/Coin7'
+import Coin8 from './pages/Gorillas/Coin8'
+import Coin9 from './pages/Gorillas/Coin9'
+import Coin10 from './pages/Gorillas/Coin10'
 import About from './pages/About'
-import ApeCoins from './pages/ApeCoins'
-import ElephantCoins from './pages/ElephantCoins'
-import ElephantCoin1 from './pages/ElephantCoin1'
-import ElephantCoin2 from './pages/ElephantCoin2'
-import ElephantCoin3 from './pages/ElephantCoin3'
-import ElephantCoin4 from './pages/ElephantCoin4'
-import ElephantCoin5 from './pages/ElephantCoin5'
-import ElephantCoin6 from './pages/ElephantCoin6'
-import ElephantCoin7 from './pages/ElephantCoin7'
-import ElephantCoin8 from './pages/ElephantCoin8'
-import ElephantCoin9 from './pages/ElephantCoin9'
-import ElephantCoin10 from './pages/ElephantCoin10'
-import ElephantCoin11 from './pages/ElephantCoin11'
-import GiraffeCoins from './pages/GiraffeCoins'
-import GiraffeCoin1 from './pages/GiraffeCoin1'
-import GiraffeCoin2 from './pages/GiraffeCoin2'
-import GiraffeCoin3 from './pages/GiraffeCoin3'
-import GiraffeCoin4 from './pages/GiraffeCoin4'
-import GiraffeCoin5 from './pages/GiraffeCoin5'
-import GiraffeCoin6 from './pages/GiraffeCoin6'
-import GiraffeCoin7 from './pages/GiraffeCoin7'
-import GiraffeCoin8 from './pages/GiraffeCoin8'
-import GiraffeCoin9 from './pages/GiraffeCoin9'
-import GiraffeCoin10 from './pages/GiraffeCoin10'
-import GiraffeCoin11 from './pages/GiraffeCoin11'
-import GiraffeCoin12 from './pages/GiraffeCoin12'
-import RhinoCoins from './pages/RhinoCoins'
+import ApeCoins from './pages/Gorillas/ApeCoins'
+import ElephantCoins from './pages/Elephants/ElephantCoins'
+import ElephantCoin1 from './pages/Elephants/ElephantCoin1'
+import ElephantCoin2 from './pages/Elephants/ElephantCoin2'
+import ElephantCoin3 from './pages/Elephants/ElephantCoin3'
+import ElephantCoin4 from './pages/Elephants/ElephantCoin4'
+import ElephantCoin5 from './pages/Elephants/ElephantCoin5'
+import ElephantCoin6 from './pages/Elephants/ElephantCoin6'
+import ElephantCoin7 from './pages/Elephants/ElephantCoin7'
+import ElephantCoin8 from './pages/Elephants/ElephantCoin8'
+import ElephantCoin9 from './pages/Elephants/ElephantCoin9'
+import ElephantCoin10 from './pages/Elephants/ElephantCoin10'
+import ElephantCoin11 from './pages/Elephants/ElephantCoin11'
+import GiraffeCoins from './pages/Giraffes/GiraffeCoins'
+import GiraffeCoin1 from './pages/Giraffes/GiraffeCoin1'
+import GiraffeCoin2 from './pages/Giraffes/GiraffeCoin2'
+import GiraffeCoin3 from './pages/Giraffes/GiraffeCoin3'
+import GiraffeCoin4 from './pages/Giraffes/GiraffeCoin4'
+import GiraffeCoin5 from './pages/Giraffes/GiraffeCoin5'
+import GiraffeCoin6 from './pages/Giraffes/GiraffeCoin6'
+import GiraffeCoin7 from './pages/Giraffes/GiraffeCoin7'
+import GiraffeCoin8 from './pages/Giraffes/GiraffeCoin8'
+import GiraffeCoin9 from './pages/Giraffes/GiraffeCoin9'
+import GiraffeCoin10 from './pages/Giraffes/GiraffeCoin10'
+import GiraffeCoin11 from './pages/Giraffes/GiraffeCoin11'
+import GiraffeCoin12 from './pages/Giraffes/GiraffeCoin12'
+import RhinoCoins from './pages/Rhinos/RhinoCoins'
+import RhinoCoin11 from './pages/Rhinos/RhinoCoin11';
+import RhinoCoin12 from './pages/Rhinos/RhinoCoin12';
+import RhinoCoin10 from './pages/Rhinos/RhinoCoin10';
+import RhinoCoin9 from './pages/Rhinos/RhinoCoin9';
+import RhinoCoin8 from './pages/Rhinos/RhinoCoin8';
+import RhinoCoin7 from './pages/Rhinos/RhinoCoin7';
+import RhinoCoin6 from './pages/Rhinos/RhinoCoin6';
+import RhinoCoin5 from './pages/Rhinos/RhinoCoin5';
+import RhinoCoin4 from './pages/Rhinos/RhinoCoin4';
+import RhinoCoin3 from './pages/Rhinos/RhinoCoin3';
+import RhinoCoin2 from './pages/Rhinos/RhinoCoin2';
+import RhinoCoin1 from './pages/Rhinos/RhinoCoin1';
+
 /** @jsxImportSource @emotion/react */
 import { jsx } from '@emotion/react'
-import RhinoCoin11 from './pages/RhinoCoin11';
-import RhinoCoin12 from './pages/RhinoCoin12';
-import RhinoCoin10 from './pages/RhinoCoin10';
-import RhinoCoin9 from './pages/RhinoCoin9';
-import RhinoCoin8 from './pages/RhinoCoin8';
-import RhinoCoin7 from './pages/RhinoCoin7';
-import RhinoCoin6 from './pages/RhinoCoin6';
-import RhinoCoin5 from './pages/RhinoCoin5';
-import RhinoCoin4 from './pages/RhinoCoin4';
-import RhinoCoin3 from './pages/RhinoCoin3';
-import RhinoCoin2 from './pages/RhinoCoin2';
-import RhinoCoin1 from './pages/RhinoCoin1';
-
-//Great Green Grasslands Elephant
-//Sherbert Sunset Elephant
-//Magestic Magenta Elephant
-//Pink Pacifist Elephant
-//Graying Gray Elephant
-//Tinkering Twilight Elephant
-//Forest Funk Elephant
-//Purple Passion Elephant
-//Neon Nerd Elephant
-//Sunny Savanna Elephant
-//OG Orange Elephant
-
-// {Coin('GreenGatsbyGiraffe', '25%', '10%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal1.gif')}
-//                         {Coin('EternalSummerGiraffe', '25%', '26%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal2.gif')}
-//                         {Coin('CottonCandyDreamsGiraffe', '25%', '42%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal3.gif')}
-//                         {Coin('JungleJamGiraffe', '25%', '58%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal4.gif')}
-//                         {Coin('NeonNitroGiraffe', '25%', '74%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal5.gif')}
-//                         {Coin('JungleBoogeyGiraffe', '25%', '90%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal6.gif')}
-                        
-                       
-//                         {Coin('EasyBreezyGiraffe', '75%', '10%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal7.gif')}
-//                         {Coin('MidnightMadnessGiraffe', '75%', '26%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal8.gif')}
-//                         {Coin('WhisperingWhiteGiraffe', '75%', '42%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal9.gif')}
-//                         {Coin('SummerBluesGiraffe', '75%', '58%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal10.gif')}
-//                         {Coin('RazzyRaspberryGiraffe', '75%', '74%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal11.gif')}
-//                         {Coin('HootinHawlloweenGiraffe', '75%', '90%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinal12.gif')}
-
-
 
 function App() {
   return (

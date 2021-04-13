@@ -99,9 +99,9 @@ export default function Home(){
                     
                     <div
                         css={{
-                            backgroundImage: `url(${background})`,
-                            backgroundSize: 'cover',
-                            backgroundColor: 'red',
+                            // backgroundImage: `url(${background})`,
+                            // backgroundSize: 'cover',
+                            backgroundColor: 'black',
                             height: '110vh', 
                             width: '95vw',
                             position: 'absolute',
@@ -270,7 +270,7 @@ export default function Home(){
                             width: '100%',
                             color: 'white',
                             position: 'absolute',
-                            top: '7.5%',
+                            top: '10%',
                             left: '50%',
                             '-ms-transform': 'translate(-50%, -50%)',
                             transform: 'translate(-50%, -50%)',
@@ -312,7 +312,7 @@ export default function Home(){
                             height: '140vh', 
                             width: '90vw',
                             position: 'absolute',
-                            top: '45%',
+                            top: '50%',
                             left: '50%',
                             '-ms-transform': 'translate(-50%, -50%)',
                             transform: 'translate(-50%, -50%)',
@@ -410,7 +410,7 @@ export default function Home(){
                             css={{
                                 width: '100%',
                                 position: 'absolute',
-                                top: '115%',
+                                top: '110%',
                                 left: '50%',
                                 '-ms-transform': 'translate(-50%, -50%)',
                                 transform: 'translate(-50%, -50%)',
@@ -433,7 +433,7 @@ export default function Home(){
                             css={{
                                 width: '100%',
                                 position: 'absolute',
-                                top: '95%',
+                                top: '96%',
                                 left: '50%',
                                 '-ms-transform': 'translate(-50%, -50%)',
                                 transform: 'translate(-50%, -50%)',

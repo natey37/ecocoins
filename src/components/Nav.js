@@ -15,7 +15,7 @@ export default function Nav(props){
                         height: '15vh', 
                         position: 'relative',
                         backgroundColor: '#A6ECE0',
-                        
+                        zIndex: 5
                     }}
                 >   
                     <div

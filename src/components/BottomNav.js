@@ -64,9 +64,9 @@ export default function BottomNav(){
                         textDecoration: 'none',
                         color: '#544B3D'
                     }}
-                    to='/'
+                    to='/EcoCoins'
                 >
-                    Follow Us
+                    All Coins
                 </Link>
             </span>
         </div>

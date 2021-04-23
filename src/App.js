@@ -14,6 +14,8 @@ function App() {
   const ElephantCoins = lazy(() => import('./pages/Elephants/ElephantCoins'));
   const GiraffeCoins = lazy(() => import('./pages/Giraffes/GiraffeCoins'));
   const RhinoCoins = lazy(() => import('./pages/Rhinos/RhinoCoins'));
+  const TigerCoins = lazy(() => import('./pages/Tigers/TigerCoins'))
+
   const Coin1 = lazy(() => import('./pages/Gorillas/Coin1'));
   const Coin2 = lazy(() => import('./pages/Gorillas/Coin2'));
   const Coin3 = lazy(() => import('./pages/Gorillas/Coin3'));
@@ -59,10 +61,34 @@ function App() {
   const RhinoCoin10 = lazy(() => import('./pages/Rhinos/RhinoCoin10'));
   const RhinoCoin11 = lazy(() => import('./pages/Rhinos/RhinoCoin11'));
   const RhinoCoin12 = lazy(() => import('./pages/Rhinos/RhinoCoin12'));
-
-
+  const TigerCoin1 = lazy(() => import('./pages/Tigers/TigerCoin1'));
+  const TigerCoin2 = lazy(() => import('./pages/Tigers/TigerCoin2'));
+  const TigerCoin3 = lazy(() => import('./pages/Tigers/TigerCoin3'));
+  const TigerCoin4 = lazy(() => import('./pages/Tigers/TigerCoin4'));
+  const TigerCoin5 = lazy(() => import('./pages/Tigers/TigerCoin5'));
+  const TigerCoin6 = lazy(() => import('./pages/Tigers/TigerCoin6'));
+  const TigerCoin7 = lazy(() => import('./pages/Tigers/TigerCoin7'));
+  const TigerCoin8 = lazy(() => import('./pages/Tigers/TigerCoin8'));
+  const TigerCoin9 = lazy(() => import('./pages/Tigers/TigerCoin9'));
+  const TigerCoin10 = lazy(() => import('./pages/Tigers/TigerCoin10'));
+  const TigerCoin11 = lazy(() => import('./pages/Tigers/TigerCoin11'));
+  const TigerCoin12 = lazy(() => import('./pages/Tigers/TigerCoin12'));
+  const TigerCoin13 = lazy(() => import('./pages/Tigers/TigerCoin13'));
+  const TigerCoin14= lazy(() => import('./pages/Tigers/TigerCoin14'));
+  const TigerCoin15 = lazy(() => import('./pages/Tigers/TigerCoin15'));
+  const TigerCoin16 = lazy(() => import('./pages/Tigers/TigerCoin16'));
+  const TigerCoin17 = lazy(() => import('./pages/Tigers/TigerCoin17'));
+  const TigerCoin18= lazy(() => import('./pages/Tigers/TigerCoin18'));
+  const TigerCoin19= lazy(() => import('./pages/Tigers/TigerCoin19'));
+  const TigerCoin20= lazy(() => import('./pages/Tigers/TigerCoin20'));
+ 
   return (
-    <div className="App">
+    <div className="App"
+          css={{
+            overflowX: 'hidden'
+
+          }}
+    >
       <Router>
         <Suspense fallback={<div>Loading...</div>}>
 
@@ -94,6 +120,10 @@ function App() {
             <Route
               exact path ='/RhinoCoins'
               component={RhinoCoins}
+            />
+            <Route
+              exact path ='/TigerCoins'
+              component={TigerCoins}
             />
             <Route
               exact path ='/BigBlueApe'
@@ -278,6 +308,86 @@ function App() {
             <Route
               exact path ='/MarvelousMagesticMagentaRhino'
               component={RhinoCoin12}
+            />
+            <Route
+              exact path ='/WhiteWalkerTiger'
+              component={TigerCoin1}
+            />
+             <Route
+              exact path ='/NocturnalBluesTiger'
+              component={TigerCoin2}
+            />
+             <Route
+              exact path ='/TurquoiseNoiseTiger'
+              component={TigerCoin3}
+            />
+             <Route
+              exact path ='/BashfulBlueTiger'
+              component={TigerCoin4}
+            />
+             <Route
+              exact path ='/GlimmeringGreenTiger'
+              component={TigerCoin5}
+            />
+             <Route
+              exact path ='/PurplePunchTiger'
+              component={TigerCoin6}
+            />
+             <Route
+              exact path ='/RagingRedTiger'
+              component={TigerCoin7}
+            />
+             <Route
+              exact path ='/GhastlyGreenTiger'
+              component={TigerCoin8}
+            />
+             <Route
+              exact path ='/OrangeO-ruptionTiger'
+              component={TigerCoin9}
+            />
+             <Route
+              exact path ='/MurkyMagentaTiger'
+              component={TigerCoin10}
+            />
+             <Route
+              exact path ='/PrimalPinkTiger'
+              component={TigerCoin11}
+            />
+             <Route
+              exact path ='/YellowThunderTiger'
+              component={TigerCoin12}
+            />
+             <Route
+              exact path ='/PinkPassionTiger'
+              component={TigerCoin13}
+            />
+             <Route
+              exact path ='/BlunderingBrownTiger'
+              component={TigerCoin14}
+            />
+             <Route
+              exact path ='/StrawberryDreamsTiger'
+              component={TigerCoin15}
+            />
+             <Route
+              exact path ='/ApocalypticGoldTiger'
+              component={TigerCoin16}
+            />
+             <Route
+              exact path ='/MysticalYellowTiger'
+              component={TigerCoin17}
+            />
+             <Route
+              exact path ='/RoseGoldTiger'
+              component={TigerCoin18}
+            />
+             <Route
+              exact path ='/BurntOrangeSunshineTiger'
+              component={TigerCoin19}
+            />
+             <Route
+              exact path ='/GleamingGoldTiger'
+              component={TigerCoin20}
             />
           </Switch>
         </Suspense>

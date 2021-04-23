@@ -18,6 +18,8 @@ export default function GiraffeCoin11(){
                 backLink={'/GiraffeCoins'}
                 backgroundImageBack={GiraffeFront}
                 backgroundImageFront={GiraffeBack}
+                nextLink={'/HootinHalloweenGiraffe'}
+                prevLink={'/SummerBluesGiraffe'}
             />
        </div>
     )

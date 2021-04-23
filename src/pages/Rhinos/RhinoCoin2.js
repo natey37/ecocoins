@@ -17,6 +17,8 @@ export default function RhinoCoin2(){
                 backLink={'/RhinoCoins'}
                 backgroundImageBack={RhinoFront}
                 backgroundImageFront={RhinoBack}
+                nextLink={'/GrassyNGassyGreenRhino'}
+                prevLink={'/NeonGothicRhino'}
             />
        </div>
     )

@@ -17,6 +17,8 @@ export default function Coin3(){
                 backLink={'/ApeCoins'}
                 backgroundImageBack={ApesBack}
                 backgroundImageFront={ApesFront}
+                nextLink={'/GrapeApe'}
+                prevLink={'/FunkyVaporApe'}
             />
        </div>
     )

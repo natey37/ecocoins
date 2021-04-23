@@ -66,8 +66,8 @@ export default function Home(){
                     <div
                         css={{
                             backgroundColor: 'black',
-                            height: '50vh', 
-                            width: '50vh',
+                            height: '40vh', 
+                            width: '40vh',
                             position: 'absolute',
                             top: top,
                             left: left,
@@ -254,7 +254,7 @@ export default function Home(){
                                 <div
                                     css={{
                                         position: 'absolute',
-                                        top: '30%',
+                                        top: '35%',
                                         left: '15%',
                                         '-ms-transform': 'translate(-50%, -50%)',
                                         transform: 'translate(-50%, -50%)',
@@ -274,7 +274,7 @@ export default function Home(){
                                 <div
                                     css={{
                                         position: 'absolute',
-                                        top: '30%',
+                                        top: '35%',
                                         left: '85%',
                                         '-ms-transform': 'translate(-50%, -50%)',
                                         transform: 'translate(-50%, -50%)',
@@ -295,7 +295,7 @@ export default function Home(){
                                 <div
                                     css={{
                                         position: 'absolute',
-                                        top: '10%',
+                                        top: '5%',
                                         left: '50%',
                                         '-ms-transform': 'translate(-50%, -50%)',
                                         transform: 'translate(-50%, -50%)',
@@ -316,7 +316,7 @@ export default function Home(){
                                 <div
                                     css={{
                                         position: 'absolute',
-                                        top: '60%',
+                                        top: '75%',
                                         left: '50%',
                                         '-ms-transform': 'translate(-50%, -50%)',
                                         transform: 'translate(-50%, -50%)',
@@ -330,16 +330,37 @@ export default function Home(){
                                     Rhino Coins
                                 </div>
                             </Link>
-                            {Coin('/ApeCoins', '50%', '15%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GorillaCoins/CompressedFinalGreatApes.gif', '20vw', '20vw')}
-                            {Coin('/ElephantCoins', '50%', '85%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantsFinal1.gif', '20vw', '20vw')}
-                            {Coin('/GiraffeCoins', '30%', '50%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinalgroup1.gif', '20vw', '20vw')}
-                            {Coin('/RhinoCoins', '80%', '50%', 'https://eco-coins.s3-us-west-2.amazonaws.com/RhinoCoins/rhinogroup1final.gif', '20vw', '20vw')}
+                            <Link
+                                to={'/TigerCoins'}
+                            >
+                                <div
+                                    css={{
+                                        position: 'absolute',
+                                        top: '40%',
+                                        left: '50%',
+                                        '-ms-transform': 'translate(-50%, -50%)',
+                                        transform: 'translate(-50%, -50%)',
+                                        fontSize: 'min(5vh, 40px)',
+                                        color: 'orange',
+                                        fontWeight: 'bold',
+                                        backgroundColor: 'black',
+                                        zIndex: 2
+                                    }}
+                                >
+                                    Tiger Coins
+                                </div>
+                            </Link>
+                            {Coin('/ApeCoins', '50%', '15%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GorillaCoins/CompressedFinalGreatApes.gif', '15vw', '15vw')}
+                            {Coin('/ElephantCoins', '50%', '85%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantsFinal1.gif', '15vw', '15vw')}
+                            {Coin('/GiraffeCoins', '20%', '50%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinalgroup1.gif', '15vw', '15vw')}
+                            {Coin('/RhinoCoins', '90%', '50%', 'https://eco-coins.s3-us-west-2.amazonaws.com/RhinoCoins/rhinogroup1final.gif', '15vw', '15vw')}
+                            {Coin('/TigerCoins', '55%', '50%', 'https://i.imgur.com/IRgRrgf.gif', '15vw', '15vw')}
                         </div>
                         <div
                             css={{
                                 width: '100%',
                                 position: 'absolute',
-                                top: '115%',
+                                top: '117.5%',
                                 left: '50%',
                                 '-ms-transform': 'translate(-50%, -50%)',
                                 transform: 'translate(-50%, -50%)',
@@ -402,7 +423,7 @@ export default function Home(){
                     css={{
                         backgroundColor: '#4E6E58',
                         position: 'relative', 
-                        height: '250vh', 
+                        height: '270vh', 
                         width: '100vw'
                     }}
                 >
@@ -524,7 +545,7 @@ export default function Home(){
                                 <div
                                     css={{
                                         position: 'absolute',
-                                        top: '2.5%',
+                                        top: '4%',
                                         left: '50%',
                                         '-ms-transform': 'translate(-50%, -50%)',
                                         transform: 'translate(-50%, -50%)',
@@ -544,7 +565,7 @@ export default function Home(){
                                 <div
                                     css={{
                                         position: 'absolute',
-                                        top: '52.5%',
+                                        top: '53%',
                                         left: '50%',
                                         '-ms-transform': 'translate(-50%, -50%)',
                                         transform: 'translate(-50%, -50%)',
@@ -564,7 +585,7 @@ export default function Home(){
                                 <div
                                     css={{
                                         position: 'absolute',
-                                        top: '27.5%',
+                                        top: '28%',
                                         left: '50%',
                                         '-ms-transform': 'translate(-50%, -50%)',
                                         transform: 'translate(-50%, -50%)',
@@ -598,16 +619,37 @@ export default function Home(){
                                     Rhino Coins
                                 </div>
                             </Link>
+                            <Link
+                                to={'/TigerCoins'}
+                            >
+                                <div
+                                    css={{
+                                        position: 'absolute',
+                                        top: '102.5%',
+                                        left: '50%',
+                                        '-ms-transform': 'translate(-50%, -50%)',
+                                        transform: 'translate(-50%, -50%)',
+                                        fontSize: 'min(5vh, 32px)',
+                                        color: 'orange',
+                                        fontWeight: 'bold',
+                                        whiteSpace: 'nowrap',
+                                        zIndex: 2
+                                    }}
+                                >
+                                    Tiger Coins
+                                </div>
+                            </Link>
                             {Coin('/ApeCoins', '15%', '50%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GorillaCoins/CompressedFinalGreatApes.gif', '20vh', '20vh')}
                             {Coin('/ElephantCoins', '65%', '50%', 'https://eco-coins.s3-us-west-2.amazonaws.com/ElephantCoins/CompressedElephantsFinal1.gif', '20vh', '20vh')}
                             {Coin('/GiraffeCoins', '40%', '50%', 'https://eco-coins.s3-us-west-2.amazonaws.com/GiraffeCoin/giraffefinalgroup1.gif', '20vh', '20vh')}
                             {Coin('/RhinoCoins', '90%', '50%', 'https://eco-coins.s3-us-west-2.amazonaws.com/RhinoCoins/rhinogroup1final.gif', '20vh', '20vh')}
+                            {Coin('/TigerCoins', '115%', '50%', 'https://i.imgur.com/IRgRrgf.gif', '40vw', '40vw')}
                         </div>
                         <div
                             css={{
                                 width: '100%',
                                 position: 'absolute',
-                                top: '110%',
+                                top: '137.5%',
                                 left: '50%',
                                 '-ms-transform': 'translate(-50%, -50%)',
                                 transform: 'translate(-50%, -50%)',

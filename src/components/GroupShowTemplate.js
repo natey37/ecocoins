@@ -10,14 +10,14 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import {Link} from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
-
-
+import realbackbutton from '../assets/realbackbutton.png'
+import BackButton from './BackButton'
 /** @jsxImportSource @emotion/react */
-import { jsx } from '@emotion/react'
+import { jsx, css, keyframes } from '@emotion/react'
 
 
 export default function GroupShowTemplate(props){
-        const {animal, coins, donationLink, donationName, donationBlurb, backgroundImage, color} = props
+        const {animal, coins, donationLink, donationName, donationBlurb, backgroundImage} = props
        
         const isDesktopOrLaptop = useMediaQuery({
             query: '(min-device-width: 1224px)'
@@ -25,6 +25,24 @@ export default function GroupShowTemplate(props){
         const isTabletOrMobileDevice = useMediaQuery({
             query: '(max-device-width: 1224px)'
         })
+
+        const Spin = keyframes`
+        25% {
+            transform: rotateY(90deg);
+        }
+
+        50{
+            transform: rotateY(180deg);
+        }
+
+        75% {
+            transform: rotateY(270deg);
+        }
+
+        100% {
+            transform: rotateY(360deg);
+        }
+        `;
         return(
             <>
             {isDesktopOrLaptop && 
@@ -39,20 +57,28 @@ export default function GroupShowTemplate(props){
                     }}
                 >
                     <Nav></Nav>
-                    <Link
+                    <BackButton
+                         top={'7.5%'}
+                         left={isDesktopOrLaptop ? '5%' : '10%'}
+                    ></BackButton>
+                    {/* <Link
                         to={'/'}
                     >
                         <div
                             css={{
-                                backgroundColor: '#7ADFBB',
+                                backgroundImage: `url(${realbackbutton})`,
+                                backgroundSize: '10vh 10vh',
+                                backgroundRepeat: 'no-repeat',
+                                // backgroundColor: '#7ADFBB',
                                 position: 'absolute',
-                                top: '20%',
-                                left: '10%',
+                                top: '7.5%',
+                                left: '5%',
                                 '-ms-transform': 'translate(-50%, -50%)',
                                 transform: 'translate(-50%, -50%)',
-                                height: '5vh', 
-                                width: '5vh',
-                                borderRadius: '50%'
+                                height: '10vh', 
+                                width: '10vh',
+                                borderRadius: '50%',
+                                zIndex: 5
                             }}
                         >
                             <div
@@ -71,7 +97,7 @@ export default function GroupShowTemplate(props){
                                         transform: 'translate(-50%, -50%)',
                                         height: '20%', 
                                         width: '30%',
-                                        backgroundColor: 'white'
+                                        // backgroundColor: 'white'
                                     }}
                                 >
                                 </div>
@@ -84,15 +110,15 @@ export default function GroupShowTemplate(props){
                                         transform: 'translate(-50%, -50%)',
                                         width: 0,
                                         height: 0, 
-                                        borderTop: '1vh solid transparent',
-                                        borderBottom: '1vh solid transparent',
-                                        borderRight: '1.5vh solid white',
+                                        // borderTop: '1vh solid transparent',
+                                        // borderBottom: '1vh solid transparent',
+                                        // borderRight: '1.5vh solid white',
                                     }}
                                 >
                                 </div>
                             </div>
                         </div>
-                    </Link>     
+                    </Link>      */}
                     <h1
                         css={{
                             backgroundColor: 'rgba(75,0,130, 0.7)',
@@ -104,7 +130,7 @@ export default function GroupShowTemplate(props){
                             transform: 'translate(-50%, -50%)',
                             // whiteSpace: 'nowrap',
                             fontSize: 'min(6vh, 50px)',
-                            zIndex: 5,
+                            // zIndex: 5,
                             width: '20%'
                         }}
                     >
@@ -154,7 +180,7 @@ export default function GroupShowTemplate(props){
                                     borderRadius: '5%',
                                     // boxShadow: '5px 5px #171717',
                                     border: '4px solid rgba(75,0,130, 0.5)',
-                                    height: '110%', 
+                                    height:'110%', 
                                     width: '32.5%',
                                     position: 'absolute',
                                     top: '50%',
@@ -218,12 +244,14 @@ export default function GroupShowTemplate(props){
                     </div>
                     <div
                             css={{
-                                width: '100%',
+                                // width: '100%',
                                 position: 'absolute',
                                 top: '85%',
                                 left: '50%',
                                 '-ms-transform': 'translate(-50%, -50%)',
                                 transform: 'translate(-50%, -50%)',
+                                backgroundColor: 'rgba(75,0,130, 0.7)',
+                                color: 'white'
                             }}
                     >
                         CHECK BACK SOON FOR NEW UPDATES
@@ -251,7 +279,11 @@ export default function GroupShowTemplate(props){
                     }}
                 >
                     <Nav></Nav>
-                    <Link
+                    <BackButton
+                         top={'7.5%'}
+                         left={isDesktopOrLaptop ? '5%' : '10%'}
+                    ></BackButton>
+                    {/* <Link
                         to={'/'}
                     >
                         <div
@@ -304,7 +336,7 @@ export default function GroupShowTemplate(props){
                                 </div>
                             </div>
                         </div>
-                    </Link>     
+                    </Link>      */}
                     <h1
                         css={{
                             backgroundColor: 'rgba(75,0,130, 0.7)',
@@ -316,7 +348,7 @@ export default function GroupShowTemplate(props){
                             transform: 'translate(-50%, -50%)',
                             whiteSpace: 'nowrap',
                             fontSize: 'min(6vh, 50px)',
-                            zIndex: 5,
+                            // zIndex: 5,
                             // width: '20%'
                         }}
                     >
@@ -436,6 +468,8 @@ export default function GroupShowTemplate(props){
                                 left: '50%',
                                 '-ms-transform': 'translate(-50%, -50%)',
                                 transform: 'translate(-50%, -50%)',
+                                backgroundColor: 'rgba(75,0,130, 0.7)',
+                                color: 'white'
                             }}
                     >
                         CHECK BACK SOON FOR NEW UPDATES

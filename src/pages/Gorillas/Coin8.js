@@ -17,6 +17,8 @@ export default function Coin8(){
                 backLink={'/ApeCoins'}
                 backgroundImageBack={ApesBack}
                 backgroundImageFront={ApesFront}
+                nextLink={'/CherryBombApe'}
+                prevLink={'/CottonCandyApe'}
             />
        </div>
     )

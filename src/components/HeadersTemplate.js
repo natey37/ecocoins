@@ -4,7 +4,7 @@ import BottomNav from './BottomNav'
 import { jsx } from '@emotion/react'
 
 export default function HeadersTemplate(props){
-    const {children, bottom, height} = props
+    const {children, bottom, height, overflow} = props
     return(
         <div
             css={{
@@ -12,7 +12,7 @@ export default function HeadersTemplate(props){
                 position: 'relative', 
                 height: '100vh', 
                 width: '100vw',
-                // overflow: 'hidden'
+                overflow: overflow && 'hidden'
 
             }}
         >

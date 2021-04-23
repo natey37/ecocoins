@@ -18,6 +18,8 @@ export default function ElephantCoin11(){
                 backLink={'/ElephantCoins'}
                 backgroundImageBack={ElephantFront}
                 backgroundImageFront={ElephantBack}
+                nextLink={'/GreatGreenGrasslandsElephant'}
+                prevLink={'/SunnySavannaElephant'}
             />
        </div>
     )

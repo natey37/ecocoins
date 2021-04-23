@@ -8,6 +8,7 @@ import Giraffes from '../assets/giraffes.png'
 import RhinosBack from '../assets/rhinoback.png'
 import Rhinos from '../assets/rhinos.png'
 import BackButton from '../components/BackButton'
+import { useMediaQuery } from 'react-responsive'
 
 /** @jsxImportSource @emotion/react */
 import { jsx } from '@emotion/react'
@@ -31,8 +32,16 @@ export default function About(){
 
                 </div>)
     }
+    const isDesktopOrLaptop = useMediaQuery({
+        query: '(min-device-width: 1224px)'
+    })
+    const isTabletOrMobileDevice = useMediaQuery({
+        query: '(max-device-width: 1224px)'
+    })
     return(
-        <HeadersTemplate>
+        <HeadersTemplate
+            overflow={true}
+        >
             <h1
                 css={{
                     color: 'white',
@@ -49,8 +58,8 @@ export default function About(){
                 About Us
             </h1>
             <BackButton
-                top={'23.5%'}
-                left={'12%'}
+                top={'7.5%'}
+                left={isDesktopOrLaptop ? '5%' : '10%'}
             >
 
             </BackButton>
